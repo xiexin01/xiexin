@@ -1,0 +1,16 @@
+2019-01-03 09:56:56.531 ===sql===[Session]:300561000000000000000		[DbName]:dbBackService		[Time]:2019-01-03 09:56:56.530		[CostLevel]:2		[Cost]:60ms
+         [DB_USER]:bsdk_deploy		
+insert into OPB_BSDK_CI_VMC(VMC_ID,VMC_TYPE,VMC_NAME,VMC_URL,VMC_USER,VMC_PWD)values('V190103095510001','31','git','https://github.com/xiexin01/xiexin','1021646089@qq.com','t8Wc2b1zurNSR36yuhhkGQ==')
+
+2019-01-03 10:22:56.189 ===sql===[Session]:300861000000000000000		[DbName]:dbBackService		[Time]:2019-01-03 10:22:56.188		[CostLevel]:1		[Cost]:7ms
+         [DB_USER]:bsdk_deploy		
+select to_char(sysdate,'yymmddhh24mi') minute_time, S_OPB_BSDK_BP.nextval sequ_value from dual
+
+2019-01-03 10:50:21.398 ===sql===[Session]:302831000000000000000		[DbName]:dbBackService		[Time]:2019-01-03 10:50:21.397		[CostLevel]:1		[Cost]:4ms
+         [DB_USER]:bsdk_deploy		
+select to_char(sysdate,'yymmddhh24mi') minute_time, S_OPB_BSDK_BP_SUB_DIR.nextval sequ_value from dual
+
+2019-01-03 10:51:15.794 ===sql===[Session]:302881000000000000000		[DbName]:dbBackService		[Time]:2019-01-03 10:51:15.793		[CostLevel]:1		[Cost]:4ms
+         [DB_USER]:bsdk_deploy		
+select to_char(sysdate,'yymmddhh24mi') minute_time, S_OPB_BSDK_BP_SUB_DIR.nextval sequ_value from dual
+

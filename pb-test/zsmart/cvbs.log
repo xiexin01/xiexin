@@ -1,0 +1,374 @@
+11356 2019-01-23 09:23:07.063 [localhost-startStop-1] ERROR c.z.z.c.j.util.DbIdentifierRefresher- registered:DbIdentifierImpl [dbName=dbBackService,dialect=com.ztesoft.zsmart.core.jdbc.dialect.OracleDialect, provider=null,prodName=null
+11363 2019-01-23 09:23:07.070 [DbIdentifierRefresher-thread] ERROR c.z.z.c.j.util.DbIdentifierRefresher- InnerRefresher thread started. refreshInterval [31536000000] nextTime [Thu Jan 23 09:23:07 CST 2020]
+11420 2019-01-23 09:23:07.127 [localhost-startStop-1] ERROR c.z.z.c.j.util.DbIdentifierRefresher- registered:DbIdentifierImpl [dbName=dbBilling,dialect=com.ztesoft.zsmart.core.jdbc.dialect.OracleDialect, provider=null,prodName=null
+11422 2019-01-23 09:23:07.129 [localhost-startStop-1] ERROR c.z.z.c.j.util.DbIdentifierRefresher- registered:DbIdentifierImpl [dbName=dbCache,dialect=com.ztesoft.zsmart.core.jdbc.dialect.TTDialect, provider=null,prodName=null
+11425 2019-01-23 09:23:07.132 [localhost-startStop-1] ERROR c.z.z.c.j.util.DbIdentifierRefresher- registered:DbIdentifierImpl [dbName=dbQDB,dialect=com.ztesoft.zsmart.core.jdbc.dialect.QDBDialect, provider=null,prodName=null
+177357 2019-01-23 09:25:53.064 [http-nio-8080-exec-5] ERROR c.z.zsmart.core.utils.SecurityUtil- Fail to read enhanceCommonEncryptionAlgorithm configuration, disable it as default
+java.util.NoSuchElementException: 'enhanceCommonEncryptionAlgorithm' doesn't map to an existing object
+	at com.ztesoft.zsmart.core.configuation.ConfigurationMgr.getBoolean(ConfigurationMgr.java:133) ~[core-base-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.utils.SecurityUtil.<clinit>(SecurityUtil.java:81) ~[core-base-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.userrole.bll.LoginManager.login(LoginManager.java:109) [userrole-8.1.20(2).jar:na]
+	at com.ztesoft.zsmart.userrole.service.LoginServ.login(LoginServ.java:45) [userrole-8.1.20(2).jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_161-1-redhat]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_161-1-redhat]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_161-1-redhat]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_161-1-redhat]
+	at com.ztesoft.zsmart.core.service.ActionDispatch.perform(ActionDispatch.java:59) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.service.invoke.InvokeNativeService.processSingleService(InvokeNativeService.java:172) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.service.invoke.InvokeNativeService.invoke(InvokeNativeService.java:98) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.service.invoke.InvokeNativeService.invoke(InvokeNativeService.java:56) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.service.interceptor.ServiceInvocation.invoke(ServiceInvocation.java:70) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.service.interceptor.CatchServiceExceptionInterceptor.interceptor(CatchServiceExceptionInterceptor.java:117) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.service.interceptor.ServiceInvocation.invoke(ServiceInvocation.java:66) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.service.interceptor.ServiceLoggingInterceptor.interceptor(ServiceLoggingInterceptor.java:136) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.service.interceptor.ServiceInvocation.invoke(ServiceInvocation.java:66) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.service.ServiceFlow.callService0(ServiceFlow.java:159) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.service.ServiceFlow.callService(ServiceFlow.java:243) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.service.ServiceFlow.callService(ServiceFlow.java:53) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.service.HttpCall.callService(HttpCall.java:43) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.userrole.servlet.AjaxLoginServlet.login(AjaxLoginServlet.java:328) [userrole-8.1.20(2).jar:na]
+	at com.ztesoft.zsmart.userrole.servlet.AjaxLoginServlet.doPost(AjaxLoginServlet.java:93) [userrole-8.1.20(2).jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at com.ztesoft.zsmart.web.filter.SessionFilter.doFilter(SessionFilter.java:174) [webcore-8.1.20(2).jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at com.ztesoft.zsmart.web.filter.LocaleFilter.doFilter(LocaleFilter.java:65) [webcore-8.1.20(2).jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94) [catalina.jar:8.0.44]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [catalina.jar:8.0.44]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.0.44]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [catalina.jar:8.0.44]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502) [catalina.jar:8.0.44]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132) [tomcat-coyote.jar:8.0.44]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684) [tomcat-coyote.jar:8.0.44]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1533) [tomcat-coyote.jar:8.0.44]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1489) [tomcat-coyote.jar:8.0.44]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_161-1-redhat]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_161-1-redhat]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.0.44]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161-1-redhat]
+1016961 2019-01-23 09:39:52.668 [http-nio-8080-exec-6] ERROR c.z.zsmart.web.handler.WebHandler- Execute Error:[S-SYS-00027] session time out
+com.ztesoft.zsmart.core.exception.BaseAppException: [S-SYS-00027] session time out
+	at com.ztesoft.zsmart.web.handler.WebHandler.executeJson(WebHandler.java:241) ~[webcore-8.1.20(2).jar:na]
+	at com.ztesoft.zsmart.web.handler.BusiJSONFacadeServlet.service(BusiJSONFacadeServlet.java:29) [webcore-8.1.20(2).jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at com.ztesoft.zsmart.web.filter.SessionFilter.doFilter(SessionFilter.java:174) [webcore-8.1.20(2).jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at com.ztesoft.zsmart.web.filter.CallServiceIgnoreSessionFilter.doFilter(CallServiceIgnoreSessionFilter.java:54) [webcore-8.1.20(2).jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at com.ztesoft.zsmart.web.filter.LocaleFilter.doFilter(LocaleFilter.java:65) [webcore-8.1.20(2).jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94) [catalina.jar:8.0.44]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [catalina.jar:8.0.44]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.0.44]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [catalina.jar:8.0.44]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502) [catalina.jar:8.0.44]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132) [tomcat-coyote.jar:8.0.44]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684) [tomcat-coyote.jar:8.0.44]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1533) [tomcat-coyote.jar:8.0.44]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1489) [tomcat-coyote.jar:8.0.44]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_161-1-redhat]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_161-1-redhat]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.0.44]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161-1-redhat]
+14023 2019-01-23 09:15:44.577 [DbIdentifierRefresher-thread] ERROR c.z.z.c.j.util.DbIdentifierRefresher- InnerRefresher thread started. refreshInterval [31536000000] nextTime [Thu Jan 23 09:15:44 CST 2020]
+14023 2019-01-23 09:15:44.577 [localhost-startStop-1] ERROR c.z.z.c.j.util.DbIdentifierRefresher- registered:DbIdentifierImpl [dbName=dbBackService,dialect=com.ztesoft.zsmart.core.jdbc.dialect.OracleDialect, provider=null,prodName=null
+14054 2019-01-23 09:15:44.608 [localhost-startStop-1] ERROR c.z.z.c.j.util.DbIdentifierRefresher- registered:DbIdentifierImpl [dbName=dbBilling,dialect=com.ztesoft.zsmart.core.jdbc.dialect.OracleDialect, provider=null,prodName=null
+14055 2019-01-23 09:15:44.609 [localhost-startStop-1] ERROR c.z.z.c.j.util.DbIdentifierRefresher- registered:DbIdentifierImpl [dbName=dbCache,dialect=com.ztesoft.zsmart.core.jdbc.dialect.TTDialect, provider=null,prodName=null
+14058 2019-01-23 09:15:44.612 [localhost-startStop-1] ERROR c.z.z.c.j.util.DbIdentifierRefresher- registered:DbIdentifierImpl [dbName=dbQDB,dialect=com.ztesoft.zsmart.core.jdbc.dialect.QDBDialect, provider=null,prodName=null
+18141 2019-01-23 09:15:48.695 [http-nio-8080-exec-2] ERROR c.z.zsmart.web.handler.WebHandler- Execute Error:[S-SYS-00027] session time out
+com.ztesoft.zsmart.core.exception.BaseAppException: [S-SYS-00027] session time out
+	at com.ztesoft.zsmart.web.handler.WebHandler.executeJson(WebHandler.java:241) ~[webcore-8.1.20(2).jar:na]
+	at com.ztesoft.zsmart.web.handler.BusiJSONFacadeServlet.service(BusiJSONFacadeServlet.java:29) [webcore-8.1.20(2).jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at com.ztesoft.zsmart.web.filter.SessionFilter.doFilter(SessionFilter.java:174) [webcore-8.1.20(2).jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at com.ztesoft.zsmart.web.filter.CallServiceIgnoreSessionFilter.doFilter(CallServiceIgnoreSessionFilter.java:54) [webcore-8.1.20(2).jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at com.ztesoft.zsmart.web.filter.LocaleFilter.doFilter(LocaleFilter.java:65) [webcore-8.1.20(2).jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94) [catalina.jar:8.0.44]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [catalina.jar:8.0.44]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.0.44]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [catalina.jar:8.0.44]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502) [catalina.jar:8.0.44]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132) [tomcat-coyote.jar:8.0.44]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684) [tomcat-coyote.jar:8.0.44]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1533) [tomcat-coyote.jar:8.0.44]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1489) [tomcat-coyote.jar:8.0.44]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_161-1-redhat]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_161-1-redhat]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.0.44]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161-1-redhat]
+18155 2019-01-23 09:15:48.709 [http-nio-8080-exec-1] ERROR c.z.zsmart.web.handler.WebHandler- Execute Error:[S-SYS-00027] session time out
+com.ztesoft.zsmart.core.exception.BaseAppException: [S-SYS-00027] session time out
+	at com.ztesoft.zsmart.web.handler.WebHandler.executeJson(WebHandler.java:241) ~[webcore-8.1.20(2).jar:na]
+	at com.ztesoft.zsmart.web.handler.BusiJSONFacadeServlet.service(BusiJSONFacadeServlet.java:29) [webcore-8.1.20(2).jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at com.ztesoft.zsmart.web.filter.SessionFilter.doFilter(SessionFilter.java:174) [webcore-8.1.20(2).jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at com.ztesoft.zsmart.web.filter.CallServiceIgnoreSessionFilter.doFilter(CallServiceIgnoreSessionFilter.java:54) [webcore-8.1.20(2).jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at com.ztesoft.zsmart.web.filter.LocaleFilter.doFilter(LocaleFilter.java:65) [webcore-8.1.20(2).jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94) [catalina.jar:8.0.44]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [catalina.jar:8.0.44]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.0.44]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [catalina.jar:8.0.44]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502) [catalina.jar:8.0.44]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132) [tomcat-coyote.jar:8.0.44]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684) [tomcat-coyote.jar:8.0.44]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1533) [tomcat-coyote.jar:8.0.44]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1489) [tomcat-coyote.jar:8.0.44]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_161-1-redhat]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_161-1-redhat]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.0.44]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161-1-redhat]
+18218 2019-01-23 09:15:48.772 [http-nio-8080-exec-2] ERROR c.z.zsmart.web.filter.SessionFilter- SessionId:82420D9F3EAE0522C4FD18BD6D0A16EB, sessionFilter error org.apache.catalina.connector.ClientAbortException: java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:396)
+	at org.apache.tomcat.util.buf.ByteChunk.flushBuffer(ByteChunk.java:426)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:345)
+	at org.apache.catalina.connector.OutputBuffer.close(OutputBuffer.java:298)
+	at org.apache.catalina.connector.CoyoteOutputStream.close(CoyoteOutputStream.java:151)
+	at com.ztesoft.zsmart.web.handler.BusiJSONFacadeServlet.service(BusiJSONFacadeServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.ztesoft.zsmart.web.filter.SessionFilter.doFilter(SessionFilter.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.ztesoft.zsmart.web.filter.CallServiceIgnoreSessionFilter.doFilter(CallServiceIgnoreSessionFilter.java:54)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.ztesoft.zsmart.web.filter.LocaleFilter.doFilter(LocaleFilter.java:65)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1533)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1489)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:124)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:172)
+	at org.apache.coyote.http11.InternalNioOutputBuffer.writeToSocket(InternalNioOutputBuffer.java:140)
+	at org.apache.coyote.http11.InternalNioOutputBuffer.flushBuffer(InternalNioOutputBuffer.java:245)
+	at org.apache.coyote.http11.InternalNioOutputBuffer.addToBB(InternalNioOutputBuffer.java:190)
+	at org.apache.coyote.http11.InternalNioOutputBuffer.access$000(InternalNioOutputBuffer.java:42)
+	at org.apache.coyote.http11.InternalNioOutputBuffer$SocketOutputBuffer.doWrite(InternalNioOutputBuffer.java:321)
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.doWrite(ChunkedOutputFilter.java:116)
+	at org.apache.coyote.http11.AbstractOutputBuffer.doWrite(AbstractOutputBuffer.java:256)
+	at org.apache.coyote.Response.doWrite(Response.java:491)
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:391)
+	... 36 more
+
+18218 2019-01-23 09:15:48.772 [http-nio-8080-exec-1] ERROR c.z.zsmart.web.filter.SessionFilter- SessionId:6D84EAB640AA9BF24A190A88F88EBD55, sessionFilter error org.apache.catalina.connector.ClientAbortException: java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:396)
+	at org.apache.tomcat.util.buf.ByteChunk.flushBuffer(ByteChunk.java:426)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:345)
+	at org.apache.catalina.connector.OutputBuffer.close(OutputBuffer.java:298)
+	at org.apache.catalina.connector.CoyoteOutputStream.close(CoyoteOutputStream.java:151)
+	at com.ztesoft.zsmart.web.handler.BusiJSONFacadeServlet.service(BusiJSONFacadeServlet.java:42)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.ztesoft.zsmart.web.filter.SessionFilter.doFilter(SessionFilter.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.ztesoft.zsmart.web.filter.CallServiceIgnoreSessionFilter.doFilter(CallServiceIgnoreSessionFilter.java:54)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at com.ztesoft.zsmart.web.filter.LocaleFilter.doFilter(LocaleFilter.java:65)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1533)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1489)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:124)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:172)
+	at org.apache.coyote.http11.InternalNioOutputBuffer.writeToSocket(InternalNioOutputBuffer.java:140)
+	at org.apache.coyote.http11.InternalNioOutputBuffer.flushBuffer(InternalNioOutputBuffer.java:245)
+	at org.apache.coyote.http11.InternalNioOutputBuffer.addToBB(InternalNioOutputBuffer.java:190)
+	at org.apache.coyote.http11.InternalNioOutputBuffer.access$000(InternalNioOutputBuffer.java:42)
+	at org.apache.coyote.http11.InternalNioOutputBuffer$SocketOutputBuffer.doWrite(InternalNioOutputBuffer.java:321)
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.doWrite(ChunkedOutputFilter.java:116)
+	at org.apache.coyote.http11.AbstractOutputBuffer.doWrite(AbstractOutputBuffer.java:256)
+	at org.apache.coyote.Response.doWrite(Response.java:491)
+	at org.apache.catalina.connector.OutputBuffer.realWriteBytes(OutputBuffer.java:391)
+	... 36 more
+
+43037 2019-01-23 09:16:13.591 [http-nio-8080-exec-6] ERROR c.z.zsmart.core.utils.SecurityUtil- Fail to read enhanceCommonEncryptionAlgorithm configuration, disable it as default
+java.util.NoSuchElementException: 'enhanceCommonEncryptionAlgorithm' doesn't map to an existing object
+	at com.ztesoft.zsmart.core.configuation.ConfigurationMgr.getBoolean(ConfigurationMgr.java:133) ~[core-base-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.utils.SecurityUtil.<clinit>(SecurityUtil.java:81) ~[core-base-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.userrole.bll.LoginManager.login(LoginManager.java:109) [userrole-8.1.20(2).jar:na]
+	at com.ztesoft.zsmart.userrole.service.LoginServ.login(LoginServ.java:45) [userrole-8.1.20(2).jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_161-1-redhat]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_161-1-redhat]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_161-1-redhat]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_161-1-redhat]
+	at com.ztesoft.zsmart.core.service.ActionDispatch.perform(ActionDispatch.java:59) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.service.invoke.InvokeNativeService.processSingleService(InvokeNativeService.java:172) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.service.invoke.InvokeNativeService.invoke(InvokeNativeService.java:98) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.service.invoke.InvokeNativeService.invoke(InvokeNativeService.java:56) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.service.interceptor.ServiceInvocation.invoke(ServiceInvocation.java:70) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.service.interceptor.CatchServiceExceptionInterceptor.interceptor(CatchServiceExceptionInterceptor.java:117) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.service.interceptor.ServiceInvocation.invoke(ServiceInvocation.java:66) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.service.interceptor.ServiceLoggingInterceptor.interceptor(ServiceLoggingInterceptor.java:136) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.service.interceptor.ServiceInvocation.invoke(ServiceInvocation.java:66) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.service.ServiceFlow.callService0(ServiceFlow.java:159) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.service.ServiceFlow.callService(ServiceFlow.java:243) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.service.ServiceFlow.callService(ServiceFlow.java:53) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.core.service.HttpCall.callService(HttpCall.java:43) [core-service-8.0.48(16).jar:na]
+	at com.ztesoft.zsmart.userrole.servlet.AjaxLoginServlet.login(AjaxLoginServlet.java:328) [userrole-8.1.20(2).jar:na]
+	at com.ztesoft.zsmart.userrole.servlet.AjaxLoginServlet.doPost(AjaxLoginServlet.java:93) [userrole-8.1.20(2).jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at com.ztesoft.zsmart.web.filter.SessionFilter.doFilter(SessionFilter.java:174) [webcore-8.1.20(2).jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at com.ztesoft.zsmart.web.filter.LocaleFilter.doFilter(LocaleFilter.java:65) [webcore-8.1.20(2).jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94) [catalina.jar:8.0.44]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [catalina.jar:8.0.44]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.0.44]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [catalina.jar:8.0.44]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502) [catalina.jar:8.0.44]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132) [tomcat-coyote.jar:8.0.44]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684) [tomcat-coyote.jar:8.0.44]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1533) [tomcat-coyote.jar:8.0.44]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1489) [tomcat-coyote.jar:8.0.44]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_161-1-redhat]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_161-1-redhat]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.0.44]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161-1-redhat]
+889913 2019-01-23 09:30:20.467 [http-nio-8080-exec-3] ERROR c.z.zsmart.web.handler.WebHandler- Execute Error:[S-SYS-00027] session time out
+com.ztesoft.zsmart.core.exception.BaseAppException: [S-SYS-00027] session time out
+	at com.ztesoft.zsmart.web.handler.WebHandler.executeJson(WebHandler.java:241) ~[webcore-8.1.20(2).jar:na]
+	at com.ztesoft.zsmart.web.handler.BusiJSONFacadeServlet.service(BusiJSONFacadeServlet.java:29) [webcore-8.1.20(2).jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at com.ztesoft.zsmart.web.filter.SessionFilter.doFilter(SessionFilter.java:174) [webcore-8.1.20(2).jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at com.ztesoft.zsmart.web.filter.CallServiceIgnoreSessionFilter.doFilter(CallServiceIgnoreSessionFilter.java:54) [webcore-8.1.20(2).jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at com.ztesoft.zsmart.web.filter.LocaleFilter.doFilter(LocaleFilter.java:65) [webcore-8.1.20(2).jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94) [catalina.jar:8.0.44]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [catalina.jar:8.0.44]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.0.44]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.0.44]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [catalina.jar:8.0.44]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502) [catalina.jar:8.0.44]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132) [tomcat-coyote.jar:8.0.44]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684) [tomcat-coyote.jar:8.0.44]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1533) [tomcat-coyote.jar:8.0.44]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1489) [tomcat-coyote.jar:8.0.44]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_161-1-redhat]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_161-1-redhat]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.0.44]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_161-1-redhat]

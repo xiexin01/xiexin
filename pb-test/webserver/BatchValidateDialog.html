@@ -1,0 +1,97 @@
+<div class="modal-header">
+    <h4 class="modal-title">{{OPB_BSDK_BP_BATCH_VALIDATE}}</h4>
+</div>
+
+
+<div class="modal-body top-padding"> 
+    <div id="batch-validate-detail-div" class="cs-block">
+    	<div class="search-bar">
+			<form id="bp-sel-search-form"
+				class="form-horizontal clearfix js-user-query" data-ui-role="form">
+				<div class="col-md-4">
+					<div class="form-group">
+						<label class="col-md-3 control-label">
+							{{OPB_BSDK_BP_WS}}</label>
+						<div class="input-group col-md-8">
+							<input id="bp-sel-ws-id" name="WS_ID"
+								class="form-control" type="text" placeholder="{{COMMON_PLS_SEL}}">
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4">
+					<div class="form-group">
+						<label class="col-md-3 control-label">
+							{{OPB_BSDK_BP_TYPE1}}</label>
+						<div class="input-group col-md-9">
+							<input id="bp-sel-bp-type" name="BP_TYPE"
+								class="form-control" type="text" placeholder="{{COMMON_PLS_SEL}}">
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-3">
+					<div class="form-group">
+					<label class="col-md-5 control-label">
+							{{OPB_BSDK_BP_NAME}}</label>
+						<div class="input-group col-md-7">
+							<input type="text" id="bp-sel-bp-name" name="BP_NAME" class="form-control" aria-describedby="basic-addon1"> 
+						</div>
+					</div>
+				</div>
+				
+				
+				  <div class="col-md-1 text-left">
+			            <button id="btn-bp-repo-search-by-cond" type="button" class="btn btn_minwidth btn-primary js-query">Query</button>
+			      </div> 
+			     
+			</form>
+			
+		</div>
+        <div class="cs-block"> 
+            <div id="batch-validate-grid" class="grid"></div> 
+        </div> 
+        <form id="js-batch-validate-result-form" class="form-horizontal clearfix"> 
+               <div class="col-md-12">
+                   <div class="form-group required">
+                       <label class="col-md-2 control-label">{{OPB_BSDK_BP_DESC}}</label>
+                       <div class="col-md-10">
+                           <textarea name="BPT_DESC" class="form-control" rows="4" maxlength="330" data-rule="required;"></textarea>
+                           <input type="hidden"  name="BP_ID">
+                           <input type="hidden"  name="BPV_ID">
+                           <input type="hidden"  name="BPV_VERSION">
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-12">
+                   <div class="form-group">
+                       <label class="col-md-2 control-label"></label>
+                       <div class="col-md-10">
+                           <label>
+                               <input name="BPT_CLEAR_DATA" type="checkbox"> {{OPB_BSDK_BP_CLEAR_SAMPLE_DATA}}
+                           </label>
+                       </div>
+                   </div>
+               </div>
+         </form> 
+    </div>
+    <div id="batch-validate-no-pass-rollback-div" class="cs-block" style="margin-bottom:0;text-align:center;height:100%;display:none">
+        
+        <div style="padding:30px 0;font-size: 24px;font-weight: bold;">
+           <span>{{OPB_BSDK_BP_CURRENT_NO_PASS_ROLLBACK_BP}}</span>
+           <span id="current-rollback-bp-name"></span>
+        </div>
+        <div style="display: inline-block;">
+            <span id="installProgressbar" class="knob"></span> 
+        </div> 
+    
+    </div>
+    
+</div>
+
+<div class="modal-footer">
+    <button id="js-batch-validate-pass-btn" type="button" class="btn btn_minwidth btn-primary" disabled="true">{{OPB_BSDK_BP_TEST_PASS}}</button>
+    <button id="js-batch-validate-no-pass-btn" type="button" class="btn btn_minwidth btn-primary" disabled="true">{{OPB_BSDK_BP_TEST_NO_PASS}}</button>
+    <button id="js-batch-validate-ok-btn" type="button" class="btn btn_minwidth btn-primary" style="display:none">{{COMMON_OK}}</button>
+    <button id="js-batch-validate-cancel-btn" type="button" class="btn btn_minwidth btn-default">{{COMMON_CANCEL}}</button>
+</div>

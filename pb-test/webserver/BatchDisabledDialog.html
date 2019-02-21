@@ -1,0 +1,64 @@
+<div class="modal-header">
+	<h4 class="modal-title">{{OPB_BSDK_BP_BATCH_DISABLED}}</h4>
+</div>
+
+<div class="modal-body top-padding">
+
+	<div class="cs-block">
+
+		<div class="search-bar">
+			<form id="bp-sel-search-form"
+				class="form-horizontal clearfix js-user-query" data-ui-role="form">
+				<div class="col-md-4">
+					<div class="form-group">
+						<label class="col-md-3 control-label"> {{OPB_BSDK_BP_WS}}</label>
+						<div class="input-group col-md-8">
+							<input id="bp-sel-ws-id" name="WS_ID" class="form-control"
+								type="text" placeholder="{{COMMON_PLS_SEL}}">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="form-group">
+						<label class="col-md-3 control-label">
+							{{OPB_BSDK_BP_TYPE1}}</label>
+						<div class="input-group col-md-9">
+							<input id="bp-sel-bp-type" name="BP_TYPE" class="form-control"
+								type="text" placeholder="{{COMMON_PLS_SEL}}">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="form-group">
+						<label class="col-md-5 control-label">
+							{{OPB_BSDK_BP_NAME}}</label>
+						<div class="input-group col-md-7">
+							<input type="text" id="bp-sel-bp-name" name="BP_NAME"
+								class="form-control" aria-describedby="basic-addon1">
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-1 text-left">
+					<button id="btn-bp-repo-search-by-cond" type="button"
+						class="btn btn_minwidth btn-primary js-query">Query</button>
+				</div>
+
+			</form>
+
+		</div>
+
+		<div id="batch-disabled-grid" class="grid"></div>
+	</div>
+
+</div>
+
+<div class="modal-footer">
+	<button id="js-batch-disabled-btn" type="button"
+		class="btn btn_minwidth btn-primary" disabled="true">{{OPB_BSDK_BP_FORBIDDEN}}</button>
+	<button id="js-batch-disabled-cancel-btn" type="button"
+		class="btn btn_minwidth btn-default">{{COMMON_CANCEL}}</button>
+</div>

@@ -1,0 +1,187 @@
+2018-11-28 14:48:27.033 [http-nio-8080-exec-3] ---------------------------------------------
+errorCode=[S-DAT-00020]
+errorCodeEnd
+errorSource=com.ztesoft.zsmart.core.service.interceptor.CatchServiceExceptionInterceptor.interceptor(CatchServiceExceptionInterceptor.java:148)]
+type : 1
+errorSourceEnd
+errorDesc=An error occurred during the processing  [QryFavMenuListByUserIdAndPortalId] service. threadname=[http-nio-8080-exec-3]
+查询操作失败
+errorDescEnd
+causeByNms=java.sql.SQLSyntaxErrorException: ORA-00904: "IS_DEFAULT_OPEN": 标识符无效
+
+causeByNmsEnd
+errorCode = [S-DAT-00020] errorDesc = [查询操作失败]
+
+
+2018-11-28 14:48:27.123 [http-nio-8080-exec-3] ---------------------------------------------
+errorCode=[S-DAT-00020]
+errorCodeEnd
+errorSource=com.ztesoft.zsmart.web.handler.WebHandler.executeJson(WebHandler.java:630)]
+type : 1
+errorSourceEnd
+errorDesc=Execute Error:[S-DAT-00020] 查询操作失败
+查询操作失败
+errorDescEnd
+causeByNms=java.sql.SQLSyntaxErrorException: ORA-00904: "IS_DEFAULT_OPEN": 标识符无效
+
+causeByNmsEnd
+errorCode = [S-DAT-00020] errorDesc = [查询操作失败]
+
+
+2018-11-28 14:52:05.467 [http-nio-8080-exec-4] ---------------------------------------------
+errorCode=[S-DAT-00020]
+errorCodeEnd
+errorSource=com.ztesoft.zsmart.core.service.interceptor.CatchServiceExceptionInterceptor.interceptor(CatchServiceExceptionInterceptor.java:148)]
+type : 1
+errorSourceEnd
+errorDesc=An error occurred during the processing  [QryFavMenuListByUserIdAndPortalId] service. threadname=[http-nio-8080-exec-4]
+查询操作失败
+errorDescEnd
+causeByNms=java.sql.SQLSyntaxErrorException: ORA-00904: "IS_DEFAULT_OPEN": 标识符无效
+
+causeByNmsEnd
+errorCode = [S-DAT-00020] errorDesc = [查询操作失败]
+
+
+2018-11-28 14:45:56.344 [http-nio-8080-exec-3] ---------------------------------------------
+errorCode=[]
+errorCodeEnd
+errorSource=com.ztesoft.zsmart.core.service.interceptor.ServiceLoggingInterceptor.logService(ServiceLoggingInterceptor.java:350)]
+type : 3
+times : 6
+errorSourceEnd
+errorDesc====service===[ServiceName]:QryFavMenuListByUserIdAndPortalId	[Time]:2018-11-28 14:45:56	[Cost]:92ms	[Success]:false
+
+[Req Xml]: 
+
+[Rsp Xml]: 
+<?xml version="1.0" encoding="utf-8"?>
+
+<zsmart>
+  <ServiceName>QryFavMenuListByUserIdAndPortalId</ServiceName>
+  <Data>
+    <CSRF_TOKEN>so5hhY/Pe2A=</CSRF_TOKEN>
+    <APP_ID>1</APP_ID>
+    <JOB_ID>1</JOB_ID>
+    <PORTAL_ID>1</PORTAL_ID>
+    <CALL_SERVICE_SUCCESS>false</CALL_SERVICE_SUCCESS>
+    <STATE>A</STATE>
+    <zsmart_session>
+      <sp-id>0</sp-id>
+      <app-id>1</app-id>
+      <staff-id>1</staff-id>
+      <user-id>1</user-id>
+      <staff-name>ADMIN</staff-name>
+      <password>vwQQisZhZ48=</password>
+      <user-name>admin</user-name>
+      <send_code>send_code</send_code>
+      <user_id>1</user_id>
+      <staff_id>1</staff_id>
+      <login-ip>0:0:0:0:0:0:0:1</login-ip>
+      <user-code>ADMIN</user-code>
+      <SESSION_ID>CFFEF8F065A36E6E557C7F2DDC6271DE</SESSION_ID>
+      <remote-ip>0:0:0:0:0:0:0:1</remote-ip>
+      <login-date>2018-11-28 14:45:56</login-date>
+    </zsmart_session>
+    <USER_ID>1</USER_ID>
+    <SP_ID>0</SP_ID>
+    <IS_LOGGED_1220>true</IS_LOGGED_1220>
+    <zsmart_referer_url>http://localhost:8080/example/</zsmart_referer_url>
+    <ServiceName>QryFavMenuListByUserIdAndPortalId</ServiceName>
+    <STAFF_JOB_ID>-1</STAFF_JOB_ID>
+  </Data>
+</zsmart>
+errorDescEnd
+causeByNms=
+causeByNmsEnd
+
+
+
+2018-11-28 15:04:22.090 [http-nio-8080-exec-9] ---------------------------------------------
+errorCode=[S-DAT-00020]
+errorCodeEnd
+errorSource=com.ztesoft.zsmart.core.service.interceptor.CatchServiceExceptionInterceptor.interceptor(CatchServiceExceptionInterceptor.java:148)]
+type : 1
+errorSourceEnd
+errorDesc=An error occurred during the processing  [QryFavMenuListByUserIdAndPortalId] service. threadname=[http-nio-8080-exec-9]
+查询操作失败
+errorDescEnd
+causeByNms=java.sql.SQLSyntaxErrorException: ORA-00904: "IS_DEFAULT_OPEN": 标识符无效
+
+causeByNmsEnd
+errorCode = [S-DAT-00020] errorDesc = [查询操作失败]
+
+
+2018-11-28 15:04:23.621 [http-nio-8080-exec-9] ---------------------------------------------
+errorCode=[S-DAT-00020]
+errorCodeEnd
+errorSource=com.ztesoft.zsmart.web.handler.WebHandler.executeJson(WebHandler.java:630)]
+type : 1
+errorSourceEnd
+errorDesc=Execute Error:[S-DAT-00020] 查询操作失败
+查询操作失败
+errorDescEnd
+causeByNms=java.sql.SQLSyntaxErrorException: ORA-00904: "IS_DEFAULT_OPEN": 标识符无效
+
+causeByNmsEnd
+errorCode = [S-DAT-00020] errorDesc = [查询操作失败]
+
+
+2018-11-28 14:53:25.685 [localhost-startStop-1] ---------------------------------------------
+errorCode=[]
+errorCodeEnd
+errorSource=com.ztesoft.zsmart.core.jdbc.JdbcDSPure.loadDbConfig(JdbcDSPure.java:145)]
+type : 3
+times : 6
+errorSourceEnd
+errorDesc=no key[dbQDB] found in path jdbc
+errorDescEnd
+causeByNms=java.lang.IllegalStateException: no key[dbQDB] found in path jdbc
+causeByNmsEnd
+java.lang.IllegalStateException: no key[dbQDB] found in path jdbc
+
+
+2018-11-28 15:09:50.308 [localhost-startStop-1] ---------------------------------------------
+errorCode=[]
+errorCodeEnd
+errorSource=com.ztesoft.zsmart.core.jdbc.JdbcDSPure.loadDbConfig(JdbcDSPure.java:145)]
+type : 3
+times : 6
+errorSourceEnd
+errorDesc=no key[dbQDB] found in path jdbc
+errorDescEnd
+causeByNms=java.lang.IllegalStateException: no key[dbQDB] found in path jdbc
+causeByNmsEnd
+java.lang.IllegalStateException: no key[dbQDB] found in path jdbc
+
+
+2018-11-28 15:54:21.092 [http-nio-8080-exec-6] ---------------------------------------------
+errorCode=[S-DAT-00020]
+errorCodeEnd
+errorSource=com.ztesoft.zsmart.core.service.interceptor.CatchServiceExceptionInterceptor.interceptor(CatchServiceExceptionInterceptor.java:148)]
+type : 1
+errorSourceEnd
+errorDesc=An error occurred during the processing  [QryFavMenuListByUserIdAndPortalId] service. threadname=[http-nio-8080-exec-6]
+查询操作失败
+errorDescEnd
+causeByNms=java.sql.SQLSyntaxErrorException: ORA-00904: "IS_DEFAULT_OPEN": 标识符无效
+
+causeByNmsEnd
+errorCode = [S-DAT-00020] errorDesc = [查询操作失败]
+
+
+2018-11-28 15:54:30.629 [http-nio-8080-exec-6] ---------------------------------------------
+errorCode=[S-DAT-00020]
+errorCodeEnd
+errorSource=com.ztesoft.zsmart.web.handler.WebHandler.executeJson(WebHandler.java:630)]
+type : 1
+errorSourceEnd
+errorDesc=Execute Error:[S-DAT-00020] 查询操作失败
+查询操作失败
+errorDescEnd
+causeByNms=java.sql.SQLSyntaxErrorException: ORA-00904: "IS_DEFAULT_OPEN": 标识符无效
+
+causeByNmsEnd
+errorCode = [S-DAT-00020] errorDesc = [查询操作失败]
+
+
