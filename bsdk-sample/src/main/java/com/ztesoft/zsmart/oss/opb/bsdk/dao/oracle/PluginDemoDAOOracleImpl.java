@@ -23,7 +23,7 @@ public class PluginDemoDAOOracleImpl extends PluginDemoDAO {
 
     @Override
     public List<PluginDemoDto> getPluginDemoList() throws BaseAppException {
-        String sql = "SELECT USER_ID,USER_NAME,PHONE,USER_CODE,STATE, PORTAL_ID ORDER BY USER_ID DESC";
+        String sql = "SELECT USER_ID,USER_NAME,PHONE,USER_CODE,STATE, PORTAL_ID FROM OPB_BSDK_PLUGIN_DEMO ORDER BY USER_ID DESC";
         return queryForList(sql, new Object[] {});
     }
 

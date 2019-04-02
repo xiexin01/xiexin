@@ -4,9 +4,9 @@ define(["webroot"],function(webroot) {
     	/**
 	     * 获取列表
 	     */
-		qryBSDKCiItemsList : function(ciDetail,pageInfo,success){ 
+		qryBSDKCiItemsList : function(params, success){ 
 			
-			fish.get("bp/cis/page",fish.extend(ciDetail, pageInfo), success, webroot);
+			fish.get("bp/plugin/queryPluginList", params, success, webroot);
 		},
     	
     };

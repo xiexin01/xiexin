@@ -12,6 +12,9 @@ define([
 		initialize: function() { 
 			var $this = this;
 			this.qryParam = {};
+			this.qryParam.argCode = "USER_ID";
+			this.qryParam.argValue = "1";
+			this.qryParam.compType = "USE_DEMO";
 			this.taskListGridColModel = [{
 				name : "userId",
 				label : '',
@@ -57,17 +60,14 @@ define([
 		},
 		
 		loadBpData: function() {
+			var self = this;
 			pluginDemoAction.qryBSDKCiItemsList(this.qryParam, function(datas){
         		datas = datas || [];        		      		
-        		this.grid.jqGrid("reloadData", {
+        		self.bpTaskListGrid.jqGrid("reloadData", {
 					'rows' : datas
 				});
         		
         	}.bind(this));
-		},
-		
-		onBpTaskGridRowSelectedCallBack : function(e,rowid, state){
-			 
 		},
 		
 		resize : function(delta){  
