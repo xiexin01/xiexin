@@ -22,7 +22,7 @@ public class PluginDemoController {
         PluginFactory pf = PluginFactory.getPluginFactory();
         Map<String, Object> map = new HashMap<>();
         map.put(argCode, argValue);
-        return pf.getPlugin(map, compType, PluginDemoService.class).queryPluginDemoList();
+        return pf.getPlugin(map, compType, PluginDemoService.class).queryPluginDemoList(argValue);
     }
 
 }

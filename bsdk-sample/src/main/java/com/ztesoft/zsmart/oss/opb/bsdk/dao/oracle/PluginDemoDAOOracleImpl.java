@@ -22,9 +22,16 @@ public class PluginDemoDAOOracleImpl extends PluginDemoDAO {
 
 
     @Override
-    public List<PluginDemoDto> getPluginDemoList() throws BaseAppException {
-        String sql = "SELECT USER_ID,USER_NAME,PHONE,USER_CODE,STATE, PORTAL_ID FROM OPB_BSDK_PLUGIN_DEMO ORDER BY USER_ID DESC";
-        return queryForList(sql, new Object[] {});
+    public List<PluginDemoDto> getPluginDemoList(String userId) throws BaseAppException {
+        String sql = "SELECT D.USER_ID,D.USER_NAME,D.PHONE,D.USER_CODE,D.STATE, D.PORTAL_ID FROM OPB_BSDK_PLUGIN_DEMO D WHERE D.PORTAL_ID = (SELECT M.PORTAL_ID FROM OPB_BSDK_PLUGIN_DEMO M WHERE M.USER_ID = ?)  ORDER BY USER_ID DESC";
+        return queryForList(sql, new Object[] {userId});
+    }
+
+
+    @Override
+    public List<PluginDemoDto> getPluginDemoNoEqualList(String userId) throws BaseAppException {
+        String sql = "SELECT D.USER_ID,D.USER_NAME,D.PHONE,D.USER_CODE,D.STATE, D.PORTAL_ID FROM OPB_BSDK_PLUGIN_DEMO D WHERE D.PORTAL_ID != (SELECT M.PORTAL_ID FROM OPB_BSDK_PLUGIN_DEMO M WHERE M.USER_ID = ?)  ORDER BY USER_ID DESC";
+        return queryForList(sql, new Object[] {userId});
     }
 
 }

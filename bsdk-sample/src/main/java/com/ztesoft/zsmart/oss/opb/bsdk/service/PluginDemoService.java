@@ -14,6 +14,6 @@ import com.ztesoft.zsmart.oss.opb.bsdk.dto.PluginDemoDto;
  */
 public interface PluginDemoService {
 
-    public List<PluginDemoDto> queryPluginDemoList() throws BaseAppException;
+    public List<PluginDemoDto> queryPluginDemoList(String userId) throws BaseAppException;
 
 }

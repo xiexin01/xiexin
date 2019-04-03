@@ -63,10 +63,20 @@ public class PluginDemoManager {
      * @param aDict <br>
      * @throws BaseAppException <br>
      */
-    public List<PluginDemoDto> getPluginDemoList() throws BaseAppException {
-        List<PluginDemoDto> list = getPluginDemoDAO().getPluginDemoList();
+    public List<PluginDemoDto> getPluginDemoList(String userId) throws BaseAppException {
+        List<PluginDemoDto> list = getPluginDemoDAO().getPluginDemoList(userId);
         return list;
     }
 
+    /**
+     * Description:获取列表 <br>
+     * 
+     * @param aDict <br>
+     * @throws BaseAppException <br>
+     */
+    public List<PluginDemoDto> getPluginDemoNoEqualList(String userId) throws BaseAppException {
+        List<PluginDemoDto> list = getPluginDemoDAO().getPluginDemoNoEqualList(userId);
+        return list;
+    }
 
 }

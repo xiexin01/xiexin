@@ -23,5 +23,7 @@ public abstract class PluginDemoDAO extends GeneralDAO<PluginDemoDto> {
      */
     private static final long serialVersionUID = -7831204509116014679L;
 
-    public abstract List<PluginDemoDto> getPluginDemoList() throws BaseAppException;
+    public abstract List<PluginDemoDto> getPluginDemoList(String userId) throws BaseAppException;
+    
+    public abstract List<PluginDemoDto> getPluginDemoNoEqualList(String userId) throws BaseAppException;
 }

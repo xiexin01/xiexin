@@ -7,11 +7,11 @@ import com.ztesoft.zsmart.oss.opb.bsdk.bll.PluginDemoManager;
 import com.ztesoft.zsmart.oss.opb.bsdk.dto.PluginDemoDto;
 import com.ztesoft.zsmart.oss.opb.bsdk.service.PluginDemoService;
 
-public class PluginDemoServiceImpl implements PluginDemoService {
+public class PluginDemoTwoServiceImpl implements PluginDemoService {
 
     @Override
     public List<PluginDemoDto> queryPluginDemoList(String userId) throws BaseAppException {
-        return PluginDemoManager.getInstance().getPluginDemoList(userId);
+        return PluginDemoManager.getInstance().getPluginDemoNoEqualList(userId);
     }
 
 }
